@@ -174,7 +174,7 @@
     NSString *stringToHightlight =
         contact.name.lastName ? contact.name.lastName : contact.name.compositeName;
     NSRange rangeToHightlight =
-        [contact.compositeName rangeOfString:stringToHightlight];
+        [contact.name.compositeName rangeOfString:stringToHightlight];
     NSMutableAttributedString *attributedString = [
         [NSMutableAttributedString alloc] initWithString:contact.name.compositeName];
 
